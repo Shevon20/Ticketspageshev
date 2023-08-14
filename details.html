@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>details</title>
+        <link rel="stylesheet" href="CSS/detail.css">
+        <link rel="stylesheet" href="CSS/common.css">
+        <link rel="stylesheet" href="CSS/international-telephone-input.css">
+       
+    </head>
+    <body>
+        <header>
+        <h1>BUY TICKETS</h1>
+        <nav class="Navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+        <li><a href="Ticketspae.html" id="ticketsLink" >Tickets</a></li>
+        <li><a href="details.html" id="detailsLink">Details</a></li>
+        <li><a href="payment.html" id="paymentLink">Payment</a></li>
+        <li><a href="confirmation.html" id="confirmationLink">confirmation</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+<br>
+<br>
+
+<div class=" block">
+  <div class="page">
+    <div class="new">
+    <h2>Enter Your Details<h2>
+   
+<form action="submit.php" method="get">
+    <div class="formD">
+      <label for="name">Full Name:</label>
+      <br>
+     <p>name as in ID</p>
+   
+    <input type="text" id="name" name="name" required>
+    <br>
+   <span id="ErrorText" ></span>
+    </div>
+<br>
+      <div class="formD">
+        <label for="item">Contact:</label>
+        <br>
+        <p>SMS/Whatsapp</p>
+        <div class="iti">
+            <input type="tel" id="phone" name="phone" required>
+           
+        </div>
+        <span id="error" ></span>
+        <br>
+      </div>
+      <br>
+
+      <div class="formD">
+        <label for="email">Email:</label>
+        <br>
+        <p>booking details will be sent</p>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <span id="errortext"></span>
+      </div>
+      <br>
+      
+      <div class="formD">
+        <label for="confirmEmail">Confirm Email:</label>
+        <br>
+        <p>to reconfirm your email</p>
+        <input type="email" id="confirmEmail" name="confirmEmail" required>
+        <br>
+        
+        <span id="errorText" ></span>
+      </div>
+      
+   <br>
+    
+      <div class="formD">
+       <label for="gender">Gender:</label>
+           <select name="gender" id="gender">
+            <br>
+              <option value="">-Select Gender-</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+           </select>    
+    </div>
+
+<br>
+
+      <div class="formD">
+        <a href="payment.html"><button type="button"  id="continue" disabled >Continue to purchase</button></a>
+      </div>
+
+    
+</form>
+</table>
+</div>
+</div>
+<div class="SumTable">
+    <table border="1" id="sumTable">
+        <tr><th  colspan="2">Summary</th>
+            <tr>
+                <td>Name</td>
+                <td id="fname" ></td>
+            </tr>
+        <tr>
+            <td>Date</td>
+            <td id="displayDate"></div> </td>
+        </tr>
+        
+        <tr>
+            <td>Time</td>
+            <td>
+                <div id="Time">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Duration</td>
+            <div id="duration">
+                <td> <div id="total-hours-value"></div><div id="normal-hours-value"></div><div id="peak-hours-value"></div></td>
+        </tr>
+    </div>
+    <tr id="phoneRow" style="display: none;">
+        <td>Phone</td>
+        <td id="phoneValue"></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td id="femail"></td>
+    </tr>
+    <tr id="genderRow" style="display: none;">
+        <td>Gender</td>
+        <td id="genderValue"></td>
+    </tr>
+        <tr class="Guestss">
+            <td>Tickets</td>
+            <td>Charges</td>
+        </tr>
+        <tr>
+            <td>SL Adults</td>
+            <td id="SumSlAd"></td>
+        </tr>
+        <tr>
+            <td>SL Children</td>
+            <td id="SumSlCh"></td>
+        </tr>
+        <tr>
+            <td>Foreigner Adults</td>
+            <td id="SumFAd"></td>
+        </tr>
+        <tr>
+            <td>Foreigner Children</td>
+            <td id="SumFCh"></td>
+        </tr>
+        <tr>
+            <td>Infants</td>
+            <td id="SumInfant"></td>
+        </tr>
+        <tr class="totalpay">
+            <td>Total Payable</td>
+            <td id="total"></td>
+        </tr>
+    </table>
+</div>
+    </div>
+<script src="JAVAS/details page.js"></script>
+<script src="JAVAS/international-numbers.js"></script>
+<div id="foot">
+    <footer>
+        <nav class="navfo">
+            <ul>
+                <li><a href="mail-to=cb010177@students.apiit.lk">Contact Us</a></li>
+                <li><a href="#https://web.facebook.com/koggalaseaturtle/?_rdc=1&_rdr">facebook</a></li>
+                <li>011-1234567</li>
+            </ul>
+<br>
+                &copy;turtle hatcheries lk T&C apply
+            </nav>
+            </footer>
+</body>
+</html>

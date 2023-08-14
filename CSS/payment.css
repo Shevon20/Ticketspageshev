@@ -1,0 +1,12 @@
+    .page{
+        margin-left: 5%;
+        width: 500px;
+        padding: 4%;
+        
+    }
+    input[type="text"]{
+        width: 100%;
+    }
+    .SumTable{
+        margin-bottom: 20px;
+    }

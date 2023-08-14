@@ -1,0 +1,136 @@
+*{
+    font-size: 20px;
+   
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+margin: 0;
+font-size: 36px;
+font-weight: bold;
+}
+/* Style the navigation menu */
+nav {
+    background-color: #4d4d4d;
+    color: #fff;
+    padding: 10px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+ transition: all 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #fff;
+    color: #4d4d4d;
+}
+ 
+  .button {
+    display: inline-block;
+    background-color: #a9aba9;
+    border:2px solid #9d9999; 
+    border-radius: 5px;
+    color: #0a0a0a;
+    font-size: 15px;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+  
+
+  }
+  .button:hover{
+    background-color: #9f9999;
+    
+  }
+  .page{
+    display: relative;
+      margin-top: 10px;
+      margin-bottom: 4px;
+      text-align: left;
+      padding-left: 3%;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+      border:solid #7f7777 2px;
+      border-radius: 8px;
+      justify-content: center;
+      background-color: white;
+  }
+  .block{
+    display: flex;
+    margin-left: 10%;
+    
+  }
+  .SumTable tr td {
+    padding: 20px;
+   
+  }
+  .SumTable{
+    margin-left: 50px;
+    margin-top: 12px;
+  }
+  .SumTable th{
+    padding: 10px;
+  }
+   input[type="text"]{
+    font-size: 16px;
+    padding: 6px;
+  }
+  input[type="email"]{
+    font-size: 16px;
+    padding: 6px;
+  }
+  input[type="date"]{
+    font-size: 16px;
+    padding: 6px;
+  }
+  .navfo ul{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 15%;
+    display: flex;
+}
+.navfo li{
+    width: calc(25% - .2em);
+    color: #fff;
+    padding-left: 40px;
+}
+.navfo ul li a{
+  color: #fff;
+    
+
+}
+.navfo {
+    height: 100%;
+    line-height: 20px;
+   
+    display: block;
+    color: #fff;
+}
+footer{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    
+}
+               
+span{
+  font-size: 14px;
+  color:red;
+}

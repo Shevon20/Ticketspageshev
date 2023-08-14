@@ -1,0 +1,97 @@
+@media (max-width: 700px){
+    .page{
+       
+        width:90%;
+        padding-left: 10px;
+        padding-right: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    #inftab
+    {
+        margin-left: -50px;
+        margin-right: 10px;
+        
+}
+.block{
+    margin-top: 10%;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    }
+    header{
+        width:100%;
+    }
+    .SumTable{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .list{
+        padding-top: 20px;
+    }
+    input[type="number"]{ 
+        width:150%
+    }
+    /* Default styles for the header */
+  
+  header .Navigation ul li {
+    position: relative;
+    float: left;
+    margin-left: 10px; /* Decreased margin for better mobile display */
+  }
+  
+  header .Navigation ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(152, 79, 79);
+    display: block;
+  }
+  
+  header .Navigation ul li a:hover {
+    color: rgb(214, 133, 133);
+  }
+  #phone{
+    width:75%
+}
+  
+/* Default styles for the header */
+
+  
+  /* Media query for mobile devices */
+ 
+    footer .navfo ul {
+      margin-left: 0; /* Reset the margin to stack the items vertically */
+      justify-content: space-between; /* Align items with equal spacing */
+    }
+  
+    footer .navfo ul li {
+      width: 100%; /* Make each item take the full width */
+      text-align: center; /* Center the text */
+      padding-left: 0; /* Remove padding to center the icon */
+      margin-bottom: 10px; /* Add some space between items */
+      padding-right: 12px;
+    }
+  
+    footer .navfo ul li:nth-of-type(1) {
+        background:none;
+    }
+  
+    footer .navfo ul li:nth-of-type(2) {
+        background:none;
+    }
+  
+    footer .navfo ul li:nth-of-type(3) {
+      background:none; /* Center the icon */
+    
+    }
+    .table-content table{
+      position: relative;
+    }
+                   .formPay input[type="text"]{
+                    width:80%;
+                   }
+  }
+
+

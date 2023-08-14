@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>tickets</title>
+    <link rel="stylesheet" href="CSS/Tickets.css">
+    <link rel="stylesheet" href="CSS/common.css">
+
+   
+  
+</head>
+<body>
+    <header>
+    <h1>BUY TICKETS</h1>
+    <nav class="Navigation">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="Ticketspae.html" id="ticketsLink" >Tickets</a></li>
+        <li><a href="details.html" id="detailsLink">Details</a></li>
+        <li><a href="payment.html" id="paymentLink">Payment</a></li>
+        <li><a href="confirmation.html" id="confirmationLink">confirmation</a></li>
+    </ul>
+</nav>
+</header>
+<br>
+    <br>
+    
+    <div class ="list">
+<h3>Select the age category and pick the tickets required</h3>
+<ul>
+    
+    <li>Adult - above 18 years</li>
+    <li>Child - 5 to 17 years</li>
+    <li>Infant - below 4 years (entrance free)</li>
+</ul>
+<br>
+<div class="table-content">
+    <table border="1" id = inftab>
+        <tr id="1strow">
+            <th colspan="4">CHARGES PER NORMAL HOUR</th>
+            
+            
+        </tr>
+        <tr id="2ndrow">
+            <th>Sri Lankan adult</th>
+            <th>Sri Lankan  child</th>
+            <th>Foriegn adult</th>
+            <th>Foreign child</th>
+           
+        </tr>
+        <tr id="3rdrow">
+            <td> 4 USD </td>
+            <td> 2 USD </td>
+            <td> 10 USD </td>
+            <td> 5 USD </td>
+            
+   
+    </table>
+<br>
+    <table border="1" id = inftab>
+    <tr id="1strow">
+    <th colspan="4">CHARGES PER PEAK HOUR</th></tr>
+    <tr id="2ndrow">
+        <th>Sri Lankan adult</th>
+        <th>Sri Lankan child</th>
+        <th>Foreign adult</th>
+        <th>Foreign child</th>
+    </tr>
+    <tr id="3rdrow">
+        <td> 6 USD </td>
+        <td> 3 USD </td>
+        <td> 13 USD</td>
+        <td> 8 USD </td>
+    </tr>
+
+    </table>
+   
+    <p id="para1"><b>10.00 am to 1.00 pm and 3.00 pm to 6.00 pm will be considered as Peak hours</b></P>
+</table>
+</div>
+<br>
+<div class = "block">
+<div class="page">
+<section>
+    <form id="form">
+    <h3>DATE</h3>
+    <p>Choose a date:</p>
+    <input type="date" id="dateInput" required>
+
+<div class="guests">
+    <h3>GUESTS</h3>
+   
+   <p>Select the number of tickets</p>
+         
+            <div class="SlAd">
+                <label for="adultTickets">Sri Lankan Adult:</label>
+        <div class="button1">
+        <button id ="deduct1" type = "button">-</button>
+        <input type="number" id="num1" name="number" value="0" size="2" min="0" step="1" readonly required>
+        <button id ="add1" type = "button">+</button>
+            </div>
+            </div>
+            <br>
+            <div class="SlCh">
+                <label for="childTickets" min="0">Sri Lankan Child:</label>
+        <div class="button1">
+            <button id ="deduct2" type = "button">-</button>
+            <input type="number" id="num2" name="number" value="0" size="2" min="0" step="1" readonly >
+            <button id ="add2" type = "button">+</button>
+            </div>
+            </div>
+            <br>
+            <div class="FoAd">
+                <label for="FAdultTickets">Foriegner Adult  : </label>
+                <div class="button1">
+                    <button id ="deduct3" type = "button">-</button>
+                    <input type="number" id="num3" name="number" value="0" size="2" min="0" step="1" readonly >
+                <button id ="add3" type = "button">+</button>
+             </div>
+            </div>
+            <br>
+            <div class="FoCh">
+                <label for ="FChildTickets">Foriegner Child  : </label>
+                <div class="button1">
+                    <button id ="deduct4" type = "button">-</button>
+                    <input type="number" id="num4" name="number" value="0" size="2" min="0" step="1" readonly >
+                    <button id ="add4" type = "button">+</button>   
+            </div>
+            </div>
+            <br>
+        
+            <div class="INF">
+                <label for="Infant">Infant  : </label>
+                <div class="button1">
+                 <button id ="deduct5" type = "button" >-</button>
+                 <input type="number" id="num5" name="number" value="0" size="2" min="0" step="1" readonly >
+                 <button id ="add5" type = "button" >+</button> 
+               </div>
+            </div>
+       
+            <br>
+           </div>
+           </section>
+           <section>
+            <div class="duration">
+                <h3>DURATION  (07.00AM to 06.00PM)</h3>
+                <p>Select a Time Slot</p>
+            
+                <select  id="timeSlots"  name="duration" required>
+                    <option value = "" selected disabled>Choose time here</option>
+                    <option value="timeslot1">07.00am to 08.00am</option>
+                    <option value="timeslot2">08.00am to 09.00am</option>
+                    <option value="timeslot3">09.00am to 10.00am(Peak)</option>
+                    <option value="timeslot4">10.00am to 11.00am(Peak)</option>
+                    <option value="timeslot5">11.00am to 12.00pm(Peak)</option>
+                    <option value="timeslot6">12.00pm to 01.00pm(Peak)</option>
+                    <option value="timeslot7">01.00pm to 02.00pm</option>
+                    <option value="timeslot8">02.00pm to 03.00pm</option>
+                    <option value="tiemslot9">03.00pm to 04.00pm(Peak)</option>
+                    <option value="timeslot10">04.00pm to 05.00pm(Peak)</option>
+                    <option value="timeslot11">05.00pm to 06.00pm(Peak)</option>
+                </select>
+                <br>
+                <br>
+                <button type="button" id="delete">Deselect all</button>
+            </div>
+            <br>
+            <br>
+            <a href="details.html"><button type="button"  id="nxt">Continue with purchase</button></a>
+        </fieldset>
+    </form>
+</section>
+</div>
+<div class="SumTable">
+    <table border="1" id="sumTable">
+        <tr><th  colspan="2">summary</th>
+        <tr>
+            <td>Date</td>
+            <td id="displayDate"></div> </td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>
+                <div id="Time">
+                    <div id="slot1"></div>
+                    <div id="slot2"></div>
+                    <div id="slot3"></div>
+                    <div id="slot4"></div>
+                    <div id="slot5"></div>
+                    <div id="slot6"></div>
+                    <div id="slot7"></div>
+                    <div id="slot8"></div>
+                    <div id="slot9"></div>
+                    <div id="slot10"></div>
+                    <div id="slot11"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Duration</td>
+            <div>
+                <td> 
+
+                    <div id="total-hours-value"></div>
+                    <div id="normal-hours-value"></div>
+                    <div id="peak-hours-value"></div>
+                </td>
+            </div>
+        </tr>
+    </div>
+        <tr class="Guestss">
+            <td>Tickets</td>
+            <td>Charges</td>
+        </tr>
+        <tr>
+            <td>SL Adults</td>
+            <td id="SumSlAd"></td>
+        </tr>
+        <tr>
+            <td>SL Children</td>
+            <td id="SumSlCh"></td>
+        </tr>
+        <tr>
+            <td>Foreigner Adults</td>
+            <td id="SumFAd"></td>
+        </tr>
+        <tr>
+            <td>Foreigner Children</td>
+            <td id="SumFCh"></td>
+        </tr>
+        <tr>
+            <td>Infants</td>
+            <td id="SumInfant"></td>
+        </tr>
+        <tr class="totalpay">
+            <td>Total Payable</td>
+            <td id="total"></td>
+        </tr>
+    </table>
+</div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+    </div>
+    <script src="JAVAS/main.js"></script>
+    <script src="JAVAS/tickets.js"></script>
+    <footer>
+        <nav class="navfo">
+            <ul>
+                <li><a href="mail-to=cb010177@students.apiit.lk">Contact Us</a></li>
+                <li><a href="#https://web.facebook.com/koggalaseaturtle/?_rdc=1&_rdr">facebook</a></li>
+                <li>0741567306</li>
+            </ul>
+            <br>
+                &copy; turtle hatcheries lk T&C apply
+            </nav>
+            </footer>
+</body>
+</html>

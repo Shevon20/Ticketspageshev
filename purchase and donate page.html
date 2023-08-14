@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Purchase and Donation Page</title>
+  <link rel="stylesheet" href="CSS/PURCHASE.CSS">
+</head>
+<body>
+  <header>
+      <h1>PURCHASE AND DONATE </h1>
+      
+       <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#TURTLE CATEGORIES">Turtle categories </a></li>
+          <li><a href="hikkaduwa turtle hatchery.html">Hikkaduwa turtle hatchery </a></li>
+          <li><a href="Threats to turtles.html">Threats to turtles</a></li>
+          <ul>
+            <li class="dropdown">
+              <button class="dropbtn">Other turtle hatcheries</a>
+              <div class="dropdown-content">
+                <a href="benthota.html">benthota</a>
+                <a href="kosgoda.html">kosgoda</a>
+                </div></ul>
+         
+          <li><a href="purchase and donate page.html">Purchase and 
+            Donate page
+            </a></li>
+        </ul>
+      </nav>
+    </header>
+  
+  
+  <h2>Make a Purchase</h2>
+  <p>Choose a product and proceed to checkout:</p>
+  <form action="process_purchase.php" method="post">
+    <label for="product">Product:</label>
+    <select id="product" name="product">
+      <option value="product1">TURTLE T-SHIRTS</option>
+      <option value="product2">TURTLE KEYTAGS</option>
+      <option value="product3">SOUVENIOUR</option>
+    </select>
+    <br>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    <br>
+    <input type="submit" value="Proceed to Checkout">
+  </form>
+  <nav>
+  <div>
+    <CENTER>
+    <a href="#"> <img src="IMAGES/PRINTED TEE.jpg" alt="baby turtles" width="200" height="200"></a>
+  
+    <a href="#"><img src="IMAGES/KEY CHAIN.jpg" alt="baby turtles" width="200" height="200"></a>
+  
+      <a href="#"><img src="IMAGES/SOUVENIR.jpg" alt="baby turtles" width="200" height="200"></a>
+      </CENTER>
+</div>
+</nav>
+  <h2>Make a Donation</h2>
+  <p>Support our cause by making a donation:</p>
+  <form action="process_donation.php" method="post">
+    <label for="donation-amount">Donation Amount:</label>
+    <input type="number" id="donation-amount" name="amount" min="1" step="any">
+    <br>
+    <input type="submit" value="Donate">
+  </form>
+</body>
+</html>
